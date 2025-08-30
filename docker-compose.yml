@@ -60,7 +60,7 @@ services:
       - ./payments-ms/src:/usr/src/app/src
     command: yarn start:dev
     ports:
-      - ${PAYMENTS_MS_PORT}:${PAYMENTS_MS_PORT}
+      - ${PAYMENTS_MS_PORT}:3000
     environment:
       - PORT=${PAYMENTS_MS_PORT}
       - NATS_SERVERS=nats://nats-server:4222
